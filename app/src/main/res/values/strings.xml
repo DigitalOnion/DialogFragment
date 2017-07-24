@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DialogFragment</string>
+
+    <string name="intro">Fragment practice. Navigate with buttons and Android back button</string>
+    <string name="btn_next_page">next page</string>
+    <string name="btn_save">Save</string>
+
+</resources>
