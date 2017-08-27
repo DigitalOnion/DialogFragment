@@ -34,13 +34,26 @@ public class FirstFragment extends Fragment {
     public void onStart() {
         super.onStart();
         Log.d("FRAGMENT", "onStart");
-        Button btn = (Button) getActivity().findViewById(R.id.btn_fragment_two);
+        Button btn = null;
+        btn = (Button) getActivity().findViewById(R.id.btn_fragment_two);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 SecondFragment fragment = new SecondFragment();
+                transaction.add(R.id.fragment_place_holder, fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+        btn = (Button) getActivity().findViewById(R.id.btn_fragment_three);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager manager = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                ThirdFragment fragment = new ThirdFragment();
                 transaction.add(R.id.fragment_place_holder, fragment);
                 transaction.addToBackStack(null);
                 transaction.commit();

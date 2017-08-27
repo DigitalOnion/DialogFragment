@@ -2,7 +2,9 @@
     <string name="app_name">DialogFragment</string>
 
     <string name="intro">Fragment practice. Navigate with buttons and Android back button</string>
-    <string name="btn_next_page">next page</string>
+    <string name="btn_enter_phrase">Enter phrase</string>
     <string name="btn_save">Save</string>
-
+    <string name="hint_dial">Enter the number to type</string>
+    <string name="btn_dial">Dial number</string>
+    <string name="msg_need_phone_permission">Need permissions to use the phone!</string>
 </resources>
